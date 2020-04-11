@@ -17,9 +17,38 @@ public class Personne implements entree{
 	private Personne conjoint;
 	private String fonction;
 
-	public Boolean recherche(String nom){
-            
-        }
+        
+    public Personne(String n, String[] p, Genre g){
+        nom=n;
+        prenom=p;
+        genre=g;
+        societe=null;
+        fonction=null;
+        conjoint=null;     
+    }
+        
+    public Personne(String n, String[] p, Genre g, Societe s, String f){
+        nom=n;
+        prenom=p;
+        genre=g;
+        societe=s;
+        fonction=f;
+        conjoint=null;     
+    }  
+    
+    public Personne(String n, String[] p, Genre g, Societe s, String f, Personne c){
+        nom=n;
+        prenom=p;
+        genre=g;
+        societe=s;
+        fonction=f;
+        conjoint=c;     
+    } 
+        
+    public Boolean recherche(String nom){
+       throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+    }
        
         
     public String toString(Presentation p, Sens s) {
@@ -44,9 +73,13 @@ public class Personne implements entree{
                 info+=nom+" ";
                 
                 for(String pre : prenom){
-                   info+=pre.substring(0, 1)+"."+" ";
+                   info+=pre.substring(0,1)+"."+" ";
                }
-                info+="("+societe+")";
+                
+                if (societe!=null){
+                    info+="("+societe+")";
+                }
+                
                 
             }
             
@@ -61,10 +94,12 @@ public class Personne implements entree{
                 info+=nom+" ";
                 
                 for(String pre : prenom){
-                   info+=pre+"."+" ";
+                   info+=pre+" ";
                 }
                 
-                info+="\n - Société : "+societe+"\n - Fonction : "+fonction;   
+                if (societe!=null){
+                  info+="\n - Société : "+societe+"\n - Fonction : "+fonction;     
+                }
             }
         }
         
@@ -93,7 +128,10 @@ public class Personne implements entree{
                 
                 info+=nom+" ";
                 
-                info+="("+societe+")";
+                if (societe!=null){
+                   info+="("+societe+")"; 
+                }
+                
                 
             }
             
@@ -112,7 +150,11 @@ public class Personne implements entree{
                 }
                 
                 info+=nom+" ";
-                info+="\n - Société : "+societe+"\n - Fonction : "+fonction;   
+                
+                if(societe!=null){
+                    info+="\n - Société : "+societe+"\n - Fonction : "+fonction;
+                }
+                   
             }
         }
     
