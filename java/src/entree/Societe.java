@@ -11,6 +11,7 @@ package entree;
  */
 public class Societe implements entree{
     private String societe;
+    public boolean toString;
 
     public Societe(String s){
         societe=s;
