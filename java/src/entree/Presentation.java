@@ -3,24 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java.entree;
+package entree;
 
 /**
  *
- * @author 33642
+ * @author Sacha
  */
-public interface entree {
-    public enum sens{
-        NOM_PRENOMS,
-        PRENOMS_NOM;
-    }
-    public enum genre{
-        HOMME,
-        FEMME;
-    }
-    public enum presentation{
+
+public enum Presentation{
         ABREGE,
         SIMPLE,
         COMPLET;
-    }
 }
+
