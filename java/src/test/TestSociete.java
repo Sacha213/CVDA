@@ -5,6 +5,8 @@
  */
 package test;
 
+import entree.Presentation;
+import entree.Sens;
 import entree.Societe;
 
 /**
@@ -16,7 +18,7 @@ public class TestSociete {
      public static void main(String[] args) {
         Societe riot = new Societe("riot games");
         //société riot nom
-        System.out.println(riot.toString);
+        System.out.println(riot.toString(Presentation.SIMPLE, Sens.NOM_PRENOMS));
      }
 
 }

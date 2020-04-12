@@ -9,9 +9,8 @@ package entree;
  *
  * @author 33642
  */
-public class Societe implements entree{
+public class Societe implements Entree{
     private String societe;
-    public boolean toString;
 
     public Societe(String s){
         societe=s;
@@ -19,7 +18,7 @@ public class Societe implements entree{
     
     @Override
     public String toString(Presentation p, Sens s) {
-        return societe;
+        return "Le nom de la société est : "+societe;
     }
 
     @Override

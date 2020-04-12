@@ -9,7 +9,7 @@ package entree;
  *
  * @author Sacha
  */
-public class Personne implements entree{
+public class Personne implements Entree{
     private String nom;
 	private String[] prenom;
 	private Genre genre;
