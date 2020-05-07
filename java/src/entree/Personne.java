@@ -5,6 +5,11 @@
  */
 package entree;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+
 /**
  *
  * @author Sacha
@@ -160,5 +165,4 @@ public class Personne implements entree{
     
         return info;
     }
-
-}
+    
