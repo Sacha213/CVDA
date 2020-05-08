@@ -23,6 +23,10 @@ public class Societe implements Entree{
 
     @Override
     public Boolean recherche(String s) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        boolean trouver=false;
+        if (s==societe){
+            trouver=true;
+        }
+        return trouver;
     }
 }

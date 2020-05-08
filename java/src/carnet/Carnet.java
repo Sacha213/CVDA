@@ -20,5 +20,8 @@ public class Carnet {
         selectionnees=selec;
     }
     
+    public void ajoutEnntre(){
+        //J'ai pas compris ce qui était demandé
+    }
     
 }
