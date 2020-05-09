@@ -3,15 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package entree;
+package carnet;
 
 /**
  *
- * @author 33642
+ * @author Sacha
  */
-public interface Entree {
-    
-    public String toString(Presentation p, Sens s);
-    
-    public Boolean recherche(String s);
+public enum Ordre {
+    CROISSANT,DECROISSANT;
 }
