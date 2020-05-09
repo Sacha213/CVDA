@@ -45,9 +45,20 @@ public class Personne implements Entree{
         conjoint=c;     
     } 
         
-    public Boolean recherche(String nom){
-       throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Boolean recherche(String rech){
+       boolean trouver=false;
         
+        for(String p : prenom){
+            if (p==rech){
+                trouver = true;
+            }
+        }
+        
+        if(nom==rech){
+            trouver=true;
+        }
+        
+        return trouver;
     }
        
         
@@ -160,5 +171,6 @@ public class Personne implements Entree{
     
         return info;
     }
+    
 
 }
